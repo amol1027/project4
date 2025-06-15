@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="#2c3e50" />
+  
+  <!-- Outer quantum ring -->
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#3498db" stroke-width="4" stroke-dasharray="10 5" />
+  
+  <!-- Middle quantum ring with animation -->
+  <circle cx="100" cy="100" r="65" fill="none" stroke="#2ecc71" stroke-width="3" stroke-dasharray="8 4">
+    <animateTransform 
+      attributeName="transform" 
+      attributeType="XML" 
+      type="rotate" 
+      from="0 100 100" 
+      to="360 100 100" 
+      dur="30s" 
+      repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Inner quantum ring with reverse animation -->
+  <circle cx="100" cy="100" r="50" fill="none" stroke="#e74c3c" stroke-width="2" stroke-dasharray="6 3">
+    <animateTransform 
+      attributeName="transform" 
+      attributeType="XML" 
+      type="rotate" 
+      from="360 100 100" 
+      to="0 100 100" 
+      dur="20s" 
+      repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Vault door outer -->
+  <circle cx="100" cy="100" r="40" fill="#34495e" stroke="#f1c40f" stroke-width="3" />
+  
+  <!-- Vault door inner -->
+  <circle cx="100" cy="100" r="30" fill="#2c3e50" stroke="#f1c40f" stroke-width="2" />
+  
+  <!-- Vault handle -->
+  <circle cx="100" cy="85" r="5" fill="#f1c40f" />
+  <rect x="97.5" y="85" width="5" height="15" fill="#f1c40f" />
+  
+  <!-- Lock mechanism -->
+  <circle cx="100" cy="100" r="15" fill="none" stroke="#f1c40f" stroke-width="2" stroke-dasharray="4 2" />
+  
+  <!-- Q symbol for Quantum -->
+  <text x="100" y="105" font-family="Arial" font-size="24" font-weight="bold" fill="#f1c40f" text-anchor="middle">Q</text>
+  
+  <!-- Data bits flowing around -->
+  <g>
+    <circle cx="130" cy="70" r="3" fill="#3498db">
+      <animateMotion 
+        path="M0 0 C30 -30 60 -30 60 0 C60 30 30 60 0 60 C-30 60 -60 30 -60 0 C-60 -30 -30 -30 0 0 Z" 
+        dur="10s" 
+        repeatCount="indefinite" />
+    </circle>
+    
+    <circle cx="70" cy="130" r="3" fill="#2ecc71">
+      <animateMotion 
+        path="M0 0 C30 -30 60 -30 60 0 C60 30 30 60 0 60 C-30 60 -60 30 -60 0 C-60 -30 -30 -30 0 0 Z" 
+        dur="7s" 
+        repeatCount="indefinite" />
+    </circle>
+    
+    <circle cx="130" cy="130" r="3" fill="#e74c3c">
+      <animateMotion 
+        path="M0 0 C-30 -30 -60 -30 -60 0 C-60 30 -30 60 0 60 C30 60 60 30 60 0 C60 -30 30 -30 0 0 Z" 
+        dur="12s" 
+        repeatCount="indefinite" />
+    </circle>
+  </g>
+</svg>
